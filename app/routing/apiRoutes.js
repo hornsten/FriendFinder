@@ -14,33 +14,36 @@ module.exports = function(app) {
     });
 
     app.post('/api/friends', function(req, res) {
+        var scoresArray = [];
+        for (var i = 0; i < friendsData.length; i++) {
 
-        // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
-        // It will do this by sending out the value "true" have a table 
-        if (friendsData.length < 5) {
-            friendsData.push(req.body);
-            res.json(true); // KEY LINE
+            var individualArray = [];
+            for (var j = 0; j < friendsData[0].scores.length; j++) {
+
+                var diff = Math.abs(req.body.scores[j] - friendsData[i].scores[j]);
+                individualArray.push(diff);
+
+            }
+            var totes = individualArray.reduce((a, b) => a + b, 0);
+            scoresArray.push(totes);
+            console.log(scoresArray);
+
         }
 
-        // Or false if they don't have a table
-        else {
-            friendsData.push(req.body);
-            res.json(false); // KEY LINE
+        function indexOfSmallest(a) {
+            var lowest = 0;
+            for (var i = 1; i < a.length; i++) {
+                if (a[i] < a[lowest]) lowest = i;
+            }
+            return lowest;
         }
+        var bestMatch = indexOfSmallest(scoresArray);
+        console.log(scoresArray);
+        console.log(bestMatch);
+        res.json(friendsData[bestMatch].name + " is your best match!");
+        friendsData.push(req.body);
 
     });
-
-    // var user1 = [5, 1, 4, 4, 5, 1, 2, 5, 4, 1];
-
-    // var compareUsers = [];
-
-    // for (var i=0; i < users.length; i++) {
-
-    // var diffMe = user1[i].scores[i] - users[i].scores[i];
-    // compareUsers.push(Math.abs(diffMe));
-    // var sum = compareUsers.reduce((a,b) => a + b, 0);
-    // console.log(sum);
-    // }
 
 
     app.post('/api/clear', function(req, res) {
