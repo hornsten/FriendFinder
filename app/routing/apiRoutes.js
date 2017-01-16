@@ -30,6 +30,18 @@ module.exports = function(app) {
 
     });
 
+    // var user1 = [5, 1, 4, 4, 5, 1, 2, 5, 4, 1];
+
+    // var compareUsers = [];
+
+    // for (var i=0; i < users.length; i++) {
+
+    // var diffMe = user1[i].scores[i] - users[i].scores[i];
+    // compareUsers.push(Math.abs(diffMe));
+    // var sum = compareUsers.reduce((a,b) => a + b, 0);
+    // console.log(sum);
+    // }
+
 
     app.post('/api/clear', function(req, res) {
         // Empty out the arrays of data

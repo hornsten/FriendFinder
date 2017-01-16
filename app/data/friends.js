@@ -1,6 +1,6 @@
 var friendsArray = [{
-    "name": "JBozzzzzz",
-    "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "name": "Like a Sloth To a Flame",
+    "photo": "https://s-media-cache-ak0.pinimg.com/736x/aa/f3/98/aaf3983c02ca5c73454d6194c3669b3f.jpg",
     "scores": [
         5,
         1,
