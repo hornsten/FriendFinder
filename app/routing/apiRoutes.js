@@ -26,8 +26,6 @@ module.exports = function(app) {
             }
             var totes = individualArray.reduce((a, b) => a + b, 0);
             scoresArray.push(totes);
-            console.log(scoresArray);
-
         }
 
         function indexOfSmallest(a) {
@@ -38,9 +36,7 @@ module.exports = function(app) {
             return lowest;
         }
         var bestMatch = indexOfSmallest(scoresArray);
-        console.log(scoresArray);
-        console.log(bestMatch);
-        res.json(friendsData[bestMatch].name + " is your best match!");
+        res.json(friendsData[bestMatch]);
         friendsData.push(req.body);
 
     });
