@@ -1,6 +1,6 @@
 var friendsArray = [{
-    "name": "Ahmed",
-    "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "name": "Lars Larssen",
+    "photo": "http://a.abcnews.com/images/US/gty_awkward_portrait_7_mi_130405_ss_ssv.jpg",
     "scores": [
         "5",
         "1",
@@ -14,8 +14,8 @@ var friendsArray = [{
         "1"
     ]
 }, {
-    "name": "Jacob Deming",
-    "photo": "https://pbs.twimg.com/profile_images/691785039043022849/oWsy8LNR.jpg",
+    "name": "Marlene Rottzker",
+    "photo": "http://doggydo.co.za/wp-content/uploads/2016/09/family-dog-photos-4.jpg",
     "scores": [
         "4",
         "2",
@@ -29,8 +29,8 @@ var friendsArray = [{
         "2"
     ]
 }, {
-    "name": "Jeremiah Scanlon",
-    "photo": "https://avatars2.githubusercontent.com/u/8504998?v=3&s=460",
+    "name": "Rena Wethersby",
+    "photo": "https://s-media-cache-ak0.pinimg.com/564x/0d/2f/b2/0d2fb23263fd0d7511b12b8b9bd437ce.jpg",
     "scores": [
         "5",
         "2",
@@ -44,8 +44,8 @@ var friendsArray = [{
         "5"
     ]
 }, {
-    "name": "Louis T. Delia",
-    "photo": "https://pbs.twimg.com/profile_images/639214960049000449/lNCRC-ub.jpg",
+    "name": "Chuy Lewis",
+    "photo": "http://static.thefrisky.com/uploads/2010/05/20/senior_portrait_g2.jpg",
     "scores": [
         "3",
         "3",
@@ -59,8 +59,8 @@ var friendsArray = [{
         "3"
     ]
 }, {
-    "name": "Lou Ritter",
-    "photo": "https://m.facebook.com/photo.php?fbid=10208500699025296&id=1542229019&set=a.1549418665704.77596.1542229019&source=11",
+    "name": "Jon Jimmersmith",
+    "photo": "http://www.teamjimmyjoe.com/wp-content/uploads/2014/12/man-portrait-with-ice-cream-cone-laser-beams-awkward-family.jpg",
     "scores": [
         "4",
         "3",
@@ -74,8 +74,8 @@ var friendsArray = [{
         "4"
     ]
 }, {
-    "name": "Jordan Biason",
-    "photo": "https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/12741971_10205764267089153_4212986785721953092_n.jpg?oh=4e18265f7d380167223a97fbd7eba278&oe=57B78445",
+    "name": "Helen 'Danger' Shapiro",
+    "photo": "http://www.teamjimmyjoe.com/wp-content/uploads/2012/11/Bad-Family-Photos-80s-Yearbook-.jpg",
     "scores": [
         "4",
         "4",
@@ -89,8 +89,8 @@ var friendsArray = [{
         "5"
     ]
 }, {
-    "name": "Justin",
-    "photo": "https://pbs.twimg.com/profile_images/691785039043022849/oWsy8LNR.jpg",
+    "name": "Rod",
+    "photo": "http://total-management.com/wp-content/uploads/2016/05/rod-stewart.jpg",
     "scores": [
         "3",
         "3",
@@ -104,8 +104,8 @@ var friendsArray = [{
         "2"
     ]
 }, {
-    "name": "kim",
-    "photo": "bbbb",
+    "name": "Bev Stemple",
+    "photo": "http://static.twentytwowords.com/wp-content/uploads/crazyeyes.jpg",
     "scores": [
         "5",
         "3",
@@ -119,8 +119,8 @@ var friendsArray = [{
         "5"
     ]
 }, {
-    "name": "limbert",
-    "photo": "https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg",
+    "name": "This guy...",
+    "photo": "https://s-media-cache-ak0.pinimg.com/564x/05/ec/e3/05ece37ef825b4d54a549ac5e8d379a9.jpg",
     "scores": [
         "2",
         "1",
@@ -135,5 +135,5 @@ var friendsArray = [{
     ]
 }];
 
-// Note how we export the array. This makes it accessible to other files using require. 
+// Export the array 
 module.exports = friendsArray;
