@@ -7,6 +7,7 @@ var path = require('path');
 // EXPRESS CONFIGURATION
 
 var app = express(); // Tells node that we are creating an "express" server
+app.use(express.static(__dirname + '/public'));
 var PORT = 8080;
 
 // BodyParser makes it easy for our server to interpret data sent to it.
