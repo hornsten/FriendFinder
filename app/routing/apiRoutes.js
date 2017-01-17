@@ -28,15 +28,30 @@ module.exports = function(app) {
             scoresArray.push(totes);
         }
 
-        function indexOfSmallest(a) {
-            var lowest = 0;
-            for (var i = 1; i < a.length; i++) {
-                if (a[i] < a[lowest]) lowest = i;
-            }
-            return lowest;
+        function arrayMin(array) {
+            return array.reduce(function(a, b) {
+                return Math.min(a, b);
+            });
         }
-        var bestMatch = indexOfSmallest(scoresArray);
-        res.json(friendsData[bestMatch]);
+
+        function getAllIndexes(arr, val) {
+            var indexes = [],
+                i = -1;
+            while ((i = arr.indexOf(val, i + 1)) != -1) {
+                indexes.push(i);
+            }
+            return indexes;
+        }
+        var smallestDiff = arrayMin(scoresArray);
+        var indexesForMatches = getAllIndexes(scoresArray, smallestDiff);
+        var matchesArray = [];
+
+        for (var i = 0; i < indexesForMatches.length; i++) {
+            matchesArray.push(friendsData[indexesForMatches[i]]);
+        }
+
+        res.json(matchesArray);
+
         friendsData.push(req.body);
 
     });

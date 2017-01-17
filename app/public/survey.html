@@ -215,10 +215,16 @@ $('#submit').on('click', function() {
     var currentURL = window.location.origin;
 
     $.post(currentURL + "/api/friends", newFriend, function(data) {
+      $('.modal-body').empty();
 
+      for (var i = 0; i < data.length; i++) {
+
+
+        $('.modal-body').append('<h3 class="text-danger">' + data[i].name + '<br><br>' + '<img src="' + data[i].photo + '" alt="Best Match" style="width:300px;height:250px;">');
+      }
+      $('#myModalLabel').html('<h1 class text-muted><span class="glyphicon glyphicon-heart text-danger"></span> At Last, True Love! <span class="glyphicon glyphicon-heart text-danger"></h1>');
       $('#myModal').modal('show');
-      $('#myModalLabel').html('<h3 class="text-danger">' + data.name + ' is your best match.');
-      $('.modal-body').html('<img src="' + data.photo + '" alt="Best Match" style="width:300px;height:250px;">');
+
       $('.form-control').val('');
     })
   } else {

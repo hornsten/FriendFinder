@@ -164,7 +164,7 @@ var friendsArray = [{
         "2"
     ]
 }, {
-    "name": "Time to work on your social skills...your mom",
+    "name": "Your Mom",
     "photo": "https://www.colourbox.com/preview/10522309-mom-cartoon-with-vacuum-cleaner.jpg",
     "scores": [
         "1",
