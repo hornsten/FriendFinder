@@ -188,24 +188,82 @@
 <script type="text/javascript">
 $('#submit').on('click', function() {
 
-  var newFriend = {
-    name: $('#name').val().trim(),
-    photo: $('#photo').val().trim(),
-    scores: [$('#q1').val(), $('#q2').val(), $('#q3').val(), $('#q4').val(), $('#q5').val(), $('#q6').val(), $('#q7').val(), $('#q8').val(), $('#q9').val(), $('#q10').val()]
-  };
+  runImage($('#photo').val());
+  var questions = $('.form-control');
 
-  var currentURL = window.location.origin;
+  function validate() {
+    var isValid = true;
+    questions.each(function() {
 
-  $.post(currentURL + "/api/friends", newFriend, function(data) {
+      if ($(this).val() === '' || $(this).val() === null) {
+        isValid = false;
+        $(this).css('border', '1px solid red');
+      } else {
+        $(this).css('border', '1px solid #dce4ec');
+      }
+    })
+    return isValid;
+  }
 
-    $('#myModal').modal('show');
-    $('#myModalLabel').html('<h4>' + data.name + ' is your best match.');
-    $('.modal-body').html('<img src="' + data.photo + '" alt="Best Match" style="width:300px;height:250px;">');
+  if (validate()) {
+    var newFriend = {
+      name: $('#name').val().trim(),
+      photo: $('#photo').val().trim(),
+      scores: [$('#q1').val(), $('#q2').val(), $('#q3').val(), $('#q4').val(), $('#q5').val(), $('#q6').val(), $('#q7').val(), $('#q8').val(), $('#q9').val(), $('#q10').val(), $('#q11').val()]
+    };
+    console.log(newFriend);
+    var currentURL = window.location.origin;
 
-  })
-  $('.form-control').val('');
+    $.post(currentURL + "/api/friends", newFriend, function(data) {
+
+      $('#myModal').modal('show');
+      $('#myModalLabel').html('<h3 class="text-danger">' + data.name + ' is your best match.');
+      $('.modal-body').html('<img src="' + data.photo + '" alt="Best Match" style="width:300px;height:250px;">');
+      $('.form-control').val('');
+    })
+  } else {
+    alert('No one loves a quitter...please complete the form!');
+  }
+
   return false;
 })
+
+function testImage(url, timeoutT) {
+  return new Promise(function(resolve, reject) {
+    var timeout = timeoutT || 5000;
+    var timer, img = new Image();
+    img.onerror = img.onabort = function() {
+      clearTimeout(timer);
+      reject("error");
+    };
+    img.onload = function() {
+      clearTimeout(timer);
+      resolve("success");
+    };
+    timer = setTimeout(function() {
+      // reset .src to invalid URL so it stops previous
+      // loading, but doens't trigger new load
+      img.src = "//!!!!/noexist.jpg";
+      reject("timeout");
+    }, timeout);
+    img.src = url;
+  });
+}
+
+function record(url, result) {
+  if (result === "success") {
+    alert('valid image');
+  } else {
+    alert('crummy fake image');
+  }
+
+  // document.body.innerHTML += "<span class='" + result + "'>" +
+  //   result + ": " + url + "</span><br>";
+}
+
+function runImage(url) {
+  testImage(url).then(record.bind(null, url), record.bind(null, url));
+}
 </script>
 
 </html>
