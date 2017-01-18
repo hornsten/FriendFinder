@@ -11,7 +11,7 @@ app.use(express.static(__dirname + '/public'));
 var PORT = process.env.PORT || 8080;
 
 // BodyParser makes it easy for our server to interpret data sent to it.
-// The code below is pretty standard.
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());

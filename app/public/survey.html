@@ -1,13 +1,14 @@
 <head>
   <meta charset="UTF-8">
-  <title>FriendFinder</title>
+  <title>Frindr</title>
   <!-- Latest compiled and minified CSS & JS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-+ENW/yibaokMnme+vBLnHMphUYxHs34h9lpdbSLuAwGkOKFRl4C34WkjazBtb7eT" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <!-- Font Awesome Glyphicons -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <!-- Animate.css CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 <html>
 
@@ -25,7 +26,7 @@
     <h4>The more the merrier!</h4>
     <form>
       <div class="form-group">
-        <select class="form-control" id="q1" style="width:200px">
+        <select class="form-control dropdown" id="q1" style="width:200px">
           <option value="1">1 (strongly disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -36,7 +37,7 @@
       <h3><i class="fa fa-heart-o text-danger" aria-hidden="true"></i> Question 2</h3>
       <h4>Books are better company than humans.</h4>
       <div class="form-group">
-        <select class="form-control" id="q2" style="width:200px">
+        <select class="form-control dropdown" id="q2" style="width:200px">
           <option value="1">1 (strongly disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -47,7 +48,7 @@
       <h3><i class="fa fa-heart-o text-danger" aria-hidden="true"></i> Question 3</h3>
       <h4>Loading the dishwasher properly is paramount.</h4>
       <div class="form-group">
-        <select class="form-control" id="q3" style="width:200px">
+        <select class="form-control dropdown" id="q3" style="width:200px">
           <option value="1">1 (strongly disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -58,7 +59,7 @@
       <h3><i class="fa fa-heart-o text-danger" aria-hidden="true"></i> Question 4</h3>
       <h4>Slow walkers are the bane of my existence.</h4>
       <div class="form-group">
-        <select class="form-control" id="q4" style="width:200px">
+        <select class="form-control dropdown" id="q4" style="width:200px">
           <option value="1">1 (strongly disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -69,7 +70,7 @@
       <h3><i class="fa fa-heart-o text-danger" aria-hidden="true"></i> Question 5</h3>
       <h4>Too much of a good thing is wonderful.</h4>
       <div class="form-group">
-        <select class="form-control" id="q5" style="width:200px">
+        <select class="form-control dropdown" id="q5" style="width:200px">
           <option value="1">1 (strongly disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -81,7 +82,7 @@
       <h4>I'd rather have a steak than a piece of cake.</h4>
       <form>
         <div class="form-group">
-          <select class="form-control" id="q6" style="width:200px">
+          <select class="form-control dropdown" id="q6" style="width:200px">
             <option value="1">1 (strongly disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -92,7 +93,7 @@
         <h3><i class="fa fa-heart-o text-danger" aria-hidden="true"></i> Question 7</h3>
         <h4>Simple is better than fancy.</h4>
         <div class="form-group">
-          <select class="form-control" id="q7" style="width:200px">
+          <select class="form-control dropdown" id="q7" style="width:200px">
             <option value="1">1 (strongly disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -103,7 +104,7 @@
         <h3><i class="fa fa-heart-o text-danger" aria-hidden="true"></i> Question 8</h3>
         <h4>Dogs make the best pets.</h4>
         <div class="form-group">
-          <select class="form-control" id="q8" style="width:200px">
+          <select class="form-control dropdown" id="q8" style="width:200px">
             <option value="1">1 (strongly disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -114,7 +115,7 @@
         <h3><i class="fa fa-heart-o text-danger" aria-hidden="true"></i> Question 9</h3>
         <h4>TV is better than movies.</h4>
         <div class="form-group">
-          <select class="form-control" id="q9" style="width:200px">
+          <select class="form-control dropdown" id="q9" style="width:200px">
             <option value="1">1 (strongly disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -125,7 +126,7 @@
         <h3><i class="fa fa-heart-o text-danger" aria-hidden="true"></i> Question 10</h3>
         <h4>Nuts ruin a perfectly good brownie.</h4>
         <div class="form-group">
-          <select class="form-control" id="q10" style="width:200px">
+          <select class="form-control dropdown" id="q10" style="width:200px">
             <option value="1">1 (strongly disagree)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -143,7 +144,7 @@
       <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/hornsten/FriendFinder">Github Repo</a></p>
     </div>
   </footer>
-  <!-- Modal -->
+  <!-- Love Connection Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -151,7 +152,23 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title text-center" id="myModalLabel"></h4>
         </div>
-        <div class="modal-body text-center">
+        <div class="modal-body text-center" id="love-modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Incomplete Form Modal -->
+  <div class="modal animated tada" id="blanksModal" tabindex="-1" role="dialog" aria-labelledby="blanksLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h1 class="modal-title text-center"><span class="glyphicon glyphicon-heart text-danger"></span> You missed a spot... <span class="glyphicon glyphicon-heart text-danger"></span></h1>
+        </div>
+        <div class="modal-body text-center">Please complete the form to find your soul mate!
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -163,48 +180,59 @@
 <script type="text/javascript">
 $('#submit').on('click', function() {
 
+  //First, make sure all the blanks have been filled
   var questions = $('.form-control');
 
   function validate() {
     var isValid = true;
     questions.each(function() {
-
+      //If the blanks are empty or null, the form is invalid. Highlight empty fields with a red border
       if ($(this).val() === '' || $(this).val() === null) {
         isValid = false;
         $(this).css('border', '1px solid red');
       } else {
+        //Return blanks to original border color upon form validation
         $(this).css('border', '1px solid #dce4ec');
       }
     })
     return isValid;
   }
-
+  //If the form is valid, add new Friend to the friendsData API. First, grab the values from the form.
   if (validate()) {
     var newFriend = {
       name: $('#name').val().trim(),
       photo: $('#photo').val().trim(),
       scores: [$('#q1').val(), $('#q2').val(), $('#q3').val(), $('#q4').val(), $('#q5').val(), $('#q6').val(), $('#q7').val(), $('#q8').val(), $('#q9').val(), $('#q10').val()]
     };
-    console.log(newFriend);
+    //Grab the page URL
     var currentURL = window.location.origin;
 
+    //Post the newFriend to the API, and receive his/her love connection(s) as a response from the backend (logic contained in apiRoutes.js.
     $.post(currentURL + "/api/friends", newFriend, function(data) {
-      $('.modal-body').empty();
 
+      //Empty the previous contents of the Love Modal
+      $('#love-modal-body').empty();
+
+      //Loop through the data and display newFriend's love connection(s) in the modal. Name and photo for each love connection will be appended.
       for (var i = 0; i < data.length; i++) {
 
-
-        $('.modal-body').append('<h3 class="text-danger">' + data[i].name + '<br><br>' + '<img src="' + data[i].photo + '" alt="Best Match" style="width:300px;height:250px;">');
+        $('#love-modal-body').append('<h3 class="text-danger">' + data[i].name + '<br><br>' + '<img src="' + data[i].photo + '" alt="Best Match" style="width:300px;height:250px;">');
       }
       $('#myModalLabel').html('<h1 class text-muted><span class="glyphicon glyphicon-heart text-danger"></span> At Last, True Love! <span class="glyphicon glyphicon-heart text-danger"></h1>');
+      //Show the modal      
       $('#myModal').modal('show');
-
+      //Clear the form
       $('.form-control').val('');
+      $('.dropdown').val('1');
     })
+
   } else {
-    alert('No one loves a quitter...please complete the form!');
+
+    //If the form is invalid, show the blanksModal, which alerts the user to fill out all the fields before submitting
+    $('#blanksModal').modal('show');
   }
 
+  //do not refresh the page
   return false;
 })
 </script>

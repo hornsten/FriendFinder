@@ -149,7 +149,7 @@ var friendsArray = [{
         "3"
     ]
 }, {
-    "name": "Josh Lasertag",
+    "name": "Jason Object",
     "photo": "http://www.anorak.co.uk/wp-content/gallery/awkward-glamour-shots-2_1/glamor-shot-fail-30.jpg",
     "scores": [
         "1",
