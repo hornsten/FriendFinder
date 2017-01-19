@@ -150,7 +150,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title text-center" id="myModalLabel"></h4>
+          <h1 class="modal-title text-center text-muted" id="myModalLabel"><span class="glyphicon glyphicon-heart text-danger"></span> At Last, True Love! <span class="glyphicon glyphicon-heart text-danger"></h1>
         </div>
         <div class="modal-body text-center" id="love-modal-body">
         </div>
@@ -207,6 +207,7 @@ $('#submit').on('click', function() {
       photo: $('#photo').val().trim(),
       scores: [$('#q1').val(), $('#q2').val(), $('#q3').val(), $('#q4').val(), $('#q5').val(), $('#q6').val(), $('#q7').val(), $('#q8').val(), $('#q9').val(), $('#q10').val()]
     };
+
     //Grab the page URL
     var currentURL = window.location.origin;
 
@@ -216,36 +217,14 @@ $('#submit').on('click', function() {
       //Empty the previous contents of the Love Modal
       $('#love-modal-body').empty();
 
-      function checkImage(src, name) {
-
-        var defaultImg = 'http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg';
-
-        var img = new Image();
-        img.onload = function() {
-          // code to set the src on success
-          // $('#image-test').css('background', 'url(' + src + ') no-repeat 50% 50%');
-          alert('success');
-          $('#love-modal-body').append('<h3 class="text-danger">' + name + '<br><br>' + '<img src="' + src + '" alt="Best Match" style="width:300px;height:250px;">');
-        };
-        img.onerror = function() {
-          // doesn't exist or error loading
-          alert('no image');
-          // $('#image-test').css('background', 'url(' + defaultImg + ') no-repeat 50% 50%');
-          $('#love-modal-body').append('<h3 class="text-danger">' + name + '<br><br>' + '<img src="' + defaultImg + '" alt="Best Match" style="width:300px;height:250px;">');
-        };
-
-        img.src = src; // fires off loading of image
-      }
-
-
       //Loop through the data and display newFriend's love connection(s) in the modal. Name and photo for each love connection will be appended.
+
       for (var i = 0; i < data.length; i++) {
 
-        checkImage(data[i].photo, data[i].name);
+        displayMatches(data[i].photo, data[i].name);
 
-        // $('#love-modal-body').append('<h3 class="text-danger">' + data[i].name + '<br><br>');
       }
-      $('#myModalLabel').html('<h1 class text-muted><span class="glyphicon glyphicon-heart text-danger"></span> At Last, True Love! <span class="glyphicon glyphicon-heart text-danger"></h1>');
+
       //Show the modal      
       $('#myModal').modal('show');
       //Clear the form
@@ -262,6 +241,25 @@ $('#submit').on('click', function() {
   //do not refresh the page
   return false;
 })
+
+function displayMatches(src, name) {
+
+  var defaultImg = 'http://place-sloth.com/300-250.jpg';
+
+  var img = new Image();
+  img.onload = function() {
+    // code to set the src on success
+
+    $('#love-modal-body').append('<h3 class="text-danger">' + name + '<br><br>' + '<img src="' + src + '" alt="Best Match" style="width:300px;height:250px;">');
+  };
+  img.onerror = function() {
+    // doesn't exist or error loading
+
+    $('#love-modal-body').append('<h3 class="text-danger">' + name + '<br><br>' + '<img src="' + defaultImg + '" alt="Best Match" style="width:300px;height:250px;">');
+  };
+
+  img.src = src; // fires off loading of image
+}
 </script>
 
 </html>
