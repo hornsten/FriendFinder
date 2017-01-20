@@ -1,6 +1,6 @@
 var friendsArray = [{
     "name": "Lars Larssen",
-    "photo": "http://a.abcnews.com/images/US/gty_awkward_portrait_7_mi_130405_ss_ssv.jpg",
+    "photo": "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?w=940&h=650&auto=compress&cs=tinysrgb",
     "scores": [
         "1",
         "2",
@@ -14,8 +14,8 @@ var friendsArray = [{
         "1"
     ]
 }, {
-    "name": "Marlene Rottzker",
-    "photo": "http://doggydo.co.za/wp-content/uploads/2016/09/family-dog-photos-4.jpg",
+    "name": "Agatha Jones",
+    "photo": "https://images.pexels.com/photos/206559/pexels-photo-206559.jpeg?w=940&h=650&auto=compress&cs=tinysrgb",
     "scores": [
         "2",
         "3",
@@ -29,8 +29,8 @@ var friendsArray = [{
         "1"
     ]
 }, {
-    "name": "Rena Wethersby",
-    "photo": "https://s-media-cache-ak0.pinimg.com/564x/0d/2f/b2/0d2fb23263fd0d7511b12b8b9bd437ce.jpg",
+    "name": "Lena Greene",
+    "photo": "https://images.pexels.com/photos/57862/pexels-photo-57862.jpeg?w=940&h=650&auto=compress&cs=tinysrgb",
     "scores": [
         "3",
         "4",
@@ -45,7 +45,7 @@ var friendsArray = [{
     ]
 }, {
     "name": "Chuy Lewis",
-    "photo": "http://static.thefrisky.com/uploads/2010/05/20/senior_portrait_g2.jpg",
+    "photo": "https://images.pexels.com/photos/4618/man-person-hat-fur.jpg?w=940&h=650&auto=compress&cs=tinysrgb",
     "scores": [
         "4",
         "5",
@@ -60,7 +60,7 @@ var friendsArray = [{
     ]
 }, {
     "name": "Jon Jimmersmith",
-    "photo": "http://www.teamjimmyjoe.com/wp-content/uploads/2014/12/man-portrait-with-ice-cream-cone-laser-beams-awkward-family.jpg",
+    "photo": "https://images.pexels.com/photos/119705/pexels-photo-119705.jpeg?w=940&h=650&auto=compress&cs=tinysrgb",
     "scores": [
         "5",
         "4",
@@ -75,7 +75,7 @@ var friendsArray = [{
     ]
 }, {
     "name": "Helen 'Danger' Shapiro",
-    "photo": "http://www.teamjimmyjoe.com/wp-content/uploads/2012/11/Bad-Family-Photos-80s-Yearbook-.jpg",
+    "photo": "https://images.pexels.com/photos/47554/pexels-photo-47554.jpeg?w=940&h=650&auto=compress&cs=tinysrgb",
     "scores": [
         "4",
         "5",
@@ -90,7 +90,7 @@ var friendsArray = [{
     ]
 }, {
     "name": "Simply Rod",
-    "photo": "http://total-management.com/wp-content/uploads/2016/05/rod-stewart.jpg",
+    "photo": "https://www.pexels.com/photo/man-in-beanie-holding-his-shoulder-193355/",
     "scores": [
         "5",
         "4",
@@ -104,8 +104,8 @@ var friendsArray = [{
         "4"
     ]
 }, {
-    "name": "Bev Shufflebottom",
-    "photo": "http://static.twentytwowords.com/wp-content/uploads/crazyeyes.jpg",
+    "name": "Ellie Prinze",
+    "photo": "https://images.pexels.com/photos/289704/pexels-photo-289704.jpeg?w=940&h=650&auto=compress&cs=tinysrgb",
     "scores": [
         "5",
         "3",
@@ -119,8 +119,8 @@ var friendsArray = [{
         "5"
     ]
 }, {
-    "name": "This guy...",
-    "photo": "https://s-media-cache-ak0.pinimg.com/564x/05/ec/e3/05ece37ef825b4d54a549ac5e8d379a9.jpg",
+    "name": "Ken Belcher",
+    "photo": "https://images.pexels.com/photos/207849/pexels-photo-207849.jpeg?w=940&h=650&auto=compress&cs=tinysrgb",
     "scores": [
         "2",
         "1",
@@ -134,8 +134,8 @@ var friendsArray = [{
         "2"
     ]
 }, {
-    "name": "'Magic' Melvin Raisins",
-    "photo": "http://www.newsiosity.com/sites/default/files/styles/flexslider_image/public/grandpafaces.jpg?itok=7xZRFIIu",
+    "name": "Melvin Ruiz",
+    "photo": "https://images.pexels.com/photos/119610/pexels-photo-119610.jpeg?w=940&h=650&auto=compress&cs=tinysrgb",
     "scores": [
         "3",
         "4",
@@ -150,7 +150,7 @@ var friendsArray = [{
     ]
 }, {
     "name": "Jason Object",
-    "photo": "http://www.anorak.co.uk/wp-content/gallery/awkward-glamour-shots-2_1/glamor-shot-fail-30.jpg",
+    "photo": "https://www.pexels.com/photo/selfie-portrait-man-sunglasses-7823/",
     "scores": [
         "1",
         "4",
@@ -165,7 +165,7 @@ var friendsArray = [{
     ]
 }, {
     "name": "Your Mom",
-    "photo": "https://www.colourbox.com/preview/10522309-mom-cartoon-with-vacuum-cleaner.jpg",
+    "photo": "http://www.thecookingmom.com/wp-content/uploads/2013/08/bio-pic-440.jpg",
     "scores": [
         "1",
         "1",

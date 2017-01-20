@@ -1,1 +1,31 @@
+.jumbotron {
+  background-image: url("../images/friends.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
 
+body {
+  background: #d9c1a9;
+}
+
+.survey {
+  background: #d6d2cc;
+}
+
+.button-primary {
+  background: #ca4737;
+}
+
+i {
+  margin-right: 10px;
+}
+
+#logo,
+#caption {
+  text-shadow: 1px 1px 10px #000;
+}
+
+h4 {
+  margin-top: 10px;
+}

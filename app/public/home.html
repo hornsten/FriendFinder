@@ -6,6 +6,8 @@
   <title>Frindr</title>
   <!-- Latest compiled and minified CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-+ENW/yibaokMnme+vBLnHMphUYxHs34h9lpdbSLuAwGkOKFRl4C34WkjazBtb7eT" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/css/ct-paper.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
   <!-- Font Awesome Glyphicons -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
@@ -15,23 +17,21 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="jumbotron">
-      <h1 style="font-family: 'Luckiest Guy',cursive;"><span class="glyphicon glyphicon-heart text-danger animated infinite rubberBand"></span>
- Frind<span style="font-size: .90em">R</span></h1>
-      <hr>
-      <h2>Answer a few basic questions.</h2>
-      <h2>Then find the friend with the greatest compatibility!</h2>
+  <div class="header">
+    <div class="jumbotron text-center">
+      <h1 id="logo" style="font-family: 'Luckiest Guy',cursive;"><span class="glyphicon glyphicon-heart text-danger animated infinite pulse"></span>Frind<span style="font-size: .90em">R</span></h1>
+      <h2 id="caption">Find your new best friend.</h2>
       <br>
       <div>
         <a href="/survey">
-          <button type="button" class="btn btn-lg btn-primary"><span class="fa fa-heart-o"></span> Go to Survey</button>
+          <button id="to-survey" type="button" class="btn btn-lg btn-fill btn-danger"><span class="fa fa-heart-o"></span> Go to Survey</button>
         </a>
       </div>
     </div>
     <footer class="footer">
       <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/hornsten/FriendFinder">Github Repo</a></p>
+        <a href="/api/friends" class="btn btn-simple btn-default">API Friends List</a> |
+        <a href="https://github.com/hornsten/FriendFinder" class="btn btn-simple btn-default">Github Repo</a>
       </div>
     </footer>
   </div>
