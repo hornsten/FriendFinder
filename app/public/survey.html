@@ -248,18 +248,18 @@ $('#submit').on('click', function() {
 
 function displayMatches(src, name) {
 
-  var defaultImg = 'http://place-sloth.com/350-250.jpg';
+  var defaultImg = '/images/placeholder.jpg';
 
   var img = new Image();
   img.onload = function() {
     // code to set the src on success
 
-    $('#love-modal-body').append('<img class="img-thumbnail img-responsive" src="' + src + '" alt="Best Match" style="width:350px;height:250px;">' + '<h6 class="text-default">' + name + '</h6><br><br>');
+    $('#love-modal-body').append('<img class="img-thumbnail img-responsive" src="' + src + '" alt="Best Match" style="width:350px;height:250px;">' + '<h5 class="text-default">' + name + '</h5><br><br>');
   };
   img.onerror = function() {
     // doesn't exist or error loading
 
-    $('#love-modal-body').append('<img class="img-thumbnail img-responsive" src="' + defaultImg + '" alt="Best Match" style="width:350px;height:250px;">' + '<h6 class="text-default">' + name + '</h6><br><br>');
+    $('#love-modal-body').append('<img class="img-thumbnail img-responsive" src="' + defaultImg + '" alt="Best Match" style="width:350px;height:250px;">' + '<h5 class="text-default">' + name + '</h5><br><br>');
   };
 
   img.src = src; // fires off loading of image

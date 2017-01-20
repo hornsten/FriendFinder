@@ -23,9 +23,20 @@ i {
 
 #logo,
 #caption {
-  text-shadow: 1px 1px 10px #000;
+  text-shadow: 1px 1px 5px #000;
 }
 
 h4 {
   margin-top: 10px;
+}
+
+.modal-title,
+.modal-body {
+  text-shadow: 1px 1px 20px #fff;
+}
+
+.modal-content {
+  background-image: url("../images/wall.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

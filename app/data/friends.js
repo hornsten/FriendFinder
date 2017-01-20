@@ -150,7 +150,7 @@ var friendsArray = [{
     ]
 }, {
     "name": "Jason Object",
-    "photo": "https://www.pexels.com/photo/selfie-portrait-man-sunglasses-7823/",
+    "photo": "https://images.pexels.com/photos/164762/pexels-photo-164762.jpeg?w=940&h=650&auto=compress&cs=tinysrgb",
     "scores": [
         "1",
         "4",
