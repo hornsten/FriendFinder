@@ -31,7 +31,6 @@ module.exports = function(app) {
 
                 //Compare the answers of the newFriend with those of friend i in the API. Find the
                 //absolute difference between each pair of scores and push it to the individualArray
-
                 var diff = Math.abs(req.body.scores[j] - friendsData[i].scores[j]);
                 individualArray.push(diff);
             }
