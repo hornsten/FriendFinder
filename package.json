@@ -1,32 +1,33 @@
 {
-    "name": "friend-finder",
-    "version": "1.0.0",
-    "description": "a node/express dating app",
-    "main": "server.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node server.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/hornsten/FriendFinder.git"
-    },
-    "keywords": [
-        "dating",
-        "node",
-        "express"
-    ],
-    "author": "Jessica Hornsten",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/hornsten/FriendFinder/issues"
-    },
-    "homepage": "https://github.com/hornsten/FriendFinder#readme",
-    "dependencies": {
-        "body-parser": "^1.15.2",
-        "express": "^4.14.0"
-    },
-    "engines": {
-        "node": "6.5.0"
-    }
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "a node/express dating app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hornsten/FriendFinder.git"
+  },
+  "keywords": [
+    "dating",
+    "node",
+    "express"
+  ],
+  "author": "Jessica Hornsten",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hornsten/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/hornsten/FriendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-favicon": "^2.0.0"
+  },
+  "engines": {
+    "node": "6.5.0"
+  }
 }

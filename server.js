@@ -1,6 +1,7 @@
 // DEPENDENCIES
 
 var express = require('express');
+var favicon = require('express-favicon');
 var bodyParser = require('body-parser');
 var path = require('path');
 
@@ -17,7 +18,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
+
+app.use(favicon(__dirname + '/app/public/favicon.png'));
 app.use(express.static(__dirname + '/app/public'));
+
 
 // ROUTER
 

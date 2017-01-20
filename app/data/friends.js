@@ -90,7 +90,7 @@ var friendsArray = [{
     ]
 }, {
     "name": "Simply Rod",
-    "photo": "https://www.pexels.com/photo/man-in-beanie-holding-his-shoulder-193355/",
+    "photo": "https://images.pexels.com/photos/190956/pexels-photo-190956.jpeg?w=940&h=650&auto=compress&cs=tinysrgb",
     "scores": [
         "5",
         "4",
