@@ -24,6 +24,7 @@ Upon completion of the survey, you will be presented with your perfect match(es)
 ## Dependencies
 * express.js
 * body-parser
+* express-favicon
 
 ## Next Steps
 I plan to incorporate a database, user authentication, and a more-detailed survey in the future.
