@@ -8,13 +8,18 @@ A Node/Express.js friend-matching app
 
 ### Survey
 
-![survey](app/public/images/survey.png?raw=true "Survey Page")
 Fill out a short survey.  Your scores are matched with other users to find your most compatible friend.  If friends are tied for compatibility, all matches are returned.
+
+![survey](app/public/images/survey.png?raw=true "Survey Page") 
+
 
 ### Modal
 
-![matches](app/public/images/matches.png?raw=true "Matches Example")
+
 Upon completion of the survey, you will be presented with your perfect match(es). Your profile will be added to the API (data is not persistent--see Next Steps).
+
+![matches](app/public/images/matches.png?raw=true "Matches Example")
+
 
 ## Dependencies
 * express.js
