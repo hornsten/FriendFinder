@@ -1,4 +1,4 @@
-# Frindr
+# Frindr :coffee:
 A Node/Express.js friend-matching app
 
 ## Images

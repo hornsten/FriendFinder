@@ -19,8 +19,6 @@ module.exports = function(app) {
 
         var scoresArray = [];
 
-
-
         //Loop through each friend in friendsData...
         for (var i = 0; i < friendsData.length; i++) {
 
